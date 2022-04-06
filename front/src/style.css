@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100;1,500&display=swap');
 :root{
     --blue: #091F43;
     --red: #D1515A;
@@ -11,7 +12,7 @@ body{
 }
 
 #app {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -27,7 +28,7 @@ body{
 
 .row{
     max-width: 767px;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
 }
