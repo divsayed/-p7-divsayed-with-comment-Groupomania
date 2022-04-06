@@ -1,0 +1,103 @@
+article{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.2); 
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.2);
+}
+
+/* AUTEUR */
+.box-author{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--blue);
+    padding: 10px 20px;
+}
+
+.box-author * {
+    color: white;
+}
+
+.box-author-left{
+    display: flex;
+    gap: 10px;
+}
+
+.box-author-date{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 5px;
+    
+}
+
+.box-author-picture{
+    height: 60px;
+    width: 60px;
+}
+
+.box-author-picture img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    padding: 0;
+}
+
+.box-author-right{
+    display: flex;
+    gap: 10px;
+
+}
+
+.box-author-action, .box-share-action{
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.box-author-action svg, .box-share-action svg{
+    transition: 200ms;
+    color: white;
+}
+
+.box-author-action:hover svg, .box-share-action:hover svg{
+    color: var(--red);
+}
+
+/* PARTAGE */
+
+.box-share{
+    background-color: var(--lightBlue);
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CONTENU */
+
+.box-text{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px 20px;
+    padding-bottom: 20px;
+}
+
+.box-text-action{
+    display: flex;
+    gap: 20px;
+}
+
+.box-text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box-picture{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}

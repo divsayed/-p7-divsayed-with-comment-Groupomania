@@ -1,0 +1,10 @@
+.poster{
+    display: flex;
+}
+
+textarea{
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    font-family: 'Montserrat';
+}
