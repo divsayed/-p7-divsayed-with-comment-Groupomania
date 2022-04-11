@@ -20,17 +20,17 @@
                     <i class="fa-solid fa-trash"></i>
                 </button>
                 <button  class="box-author-action" v-if="comments == 'true'" @click="() => actionOpenComments(post_id)">
-                    <i class="fa-solid fa-comment"></i>
+                    <i class="fa-solid fa-comment"></i> 
                 </button>
             </div>
         </div>
         <div class="box-share" v-if="type && type == 'share'">
-            <span class="box-share-content">
+            <span class="box-share-content"> 
                 Partagé par : {{share_name}} le {{getDateHour(share_date)}}
             </span>
             <button v-if="share_user_id == this.userId || isAdmin" class="box-share-action" @click="() => actionDeleteShare(share_id)">
                 <i class="fa-solid fa-trash"></i>
-            </button>
+            </button>   
         </div>
         <div class="box-text" v-if="updateStatus != true">
             <div v-if="writing === 'false'"  class="box-text-content">

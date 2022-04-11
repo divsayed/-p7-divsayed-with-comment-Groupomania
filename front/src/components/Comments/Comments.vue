@@ -17,7 +17,7 @@
                 type="post"
                 :updateStatus="updateStatus[index]"
 
-                :create_picture_user="comment.profile_picture"
+                :create_picture_user="`${api}/${comment.profile_picture}`"
                 :create_name="`${comment.firstName} ${comment.lastName}`"
                 :create_user_id="comment.id_user"
                 :create_date="comment.date_comment"
