@@ -58,5 +58,4 @@ export default {
     beforeMount: function(){
         console.log(this.updateStatus)
     }
-
 }

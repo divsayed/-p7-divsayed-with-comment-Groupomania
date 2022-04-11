@@ -12,6 +12,5 @@ module.exports = (req, res) => {
             message: "Message crée avec succés !"
         })
     });  
-
 };
 
