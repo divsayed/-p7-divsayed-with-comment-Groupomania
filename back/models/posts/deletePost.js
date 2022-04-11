@@ -26,10 +26,10 @@ module.exports = (req, res) => {
                         if (err) {
                             res.status(400).json({ message: "Impossible de supprimer le post !" })
                         } else {
-                            db.query(
+                            db.query(  
                                 "DELETE FROM posts WHERE id_post = ?",
                                 [req.params.id_post], 
-                                function(err) {
+                                function(err) {   
                                 if (err) {
                                     res.status(400).json({ message: "Impossible de supprimer le post !" })
                                 }
@@ -45,4 +45,4 @@ module.exports = (req, res) => {
     )
     
 
-};
+};  
